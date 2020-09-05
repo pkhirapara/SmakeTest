@@ -24,7 +24,7 @@ class TodoRequest extends FormRequest
     public function rules()
     {
         return [
-            "namae"=>"required",
+            "name"=>"required",
             "discription"=>"required"
         ];
     }

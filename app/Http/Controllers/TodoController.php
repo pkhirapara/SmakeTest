@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Todo;
-use app\Http\Requests;
+use App\Http\Requests\TodoRequest;
 
 class TodoController extends Controller
 {
@@ -15,7 +15,7 @@ class TodoController extends Controller
         $data = [
             'todos' => $todos
         ];
-        
+
         return view ('todos.index', $data);
     }
 
@@ -29,7 +29,7 @@ class TodoController extends Controller
         $request->request->add(['user_id' => auth()->user()->id]);
         Todo::create($request->all());
 
-        return redirect('/');
+        return redirect('/home');
     }
 
     public function edit(Todo $todo)
@@ -42,13 +42,13 @@ class TodoController extends Controller
         $request->request->add(['user_id' => auth()->user()->id]);
         $todo->update($request->all());
 
-        return redirect('/');
+        return redirect('/home');
     }
 
     public function delete(Todo $todo)
     {
         $todo->delete();
 
-        return redirect('/');
+        return redirect('/home');
     }
 }

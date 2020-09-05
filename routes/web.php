@@ -20,7 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
-
+Route::group(['middleware' => ['auth', 'web']], function() {
 /**
  * Show Todo dashboard
  */
@@ -50,3 +50,4 @@ Route::put('todos/{todo}', 'TodoController@update');
  * Delete Todo
  */
 Route::get('/todos/{todo}/delete', 'TodoController@delete');
+});
