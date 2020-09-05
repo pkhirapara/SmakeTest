@@ -1,4 +1,7 @@
 ## About SmakeTest
+- Requirement : 
+  - composer in your local system
+  - npm in your local system
 
 Clone this repository from : git clone https://github.com/pkhirapara/SmakeTest.git
 
