@@ -1,5 +1,5 @@
 ## About SmakeTest
-- Requirement : 
+- Requirements : 
   - composer in your local system
   - npm in your local system
 
