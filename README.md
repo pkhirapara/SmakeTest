@@ -11,7 +11,7 @@ Clone this repository from : git clone https://github.com/pkhirapara/SmakeTest.g
 -   npm run dev
 -   copy .env.example
 -   make .env
--   past env.example code
+-   paste env.example code
 -   replace database credential with your local credential
 -   php artisan migrate
 -   php artisan key:generate
