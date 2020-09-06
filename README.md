@@ -14,6 +14,7 @@ Clone this repository from : git clone https://github.com/pkhirapara/SmakeTest.g
 -   past env.example code
 -   replace database credential with your local credential
 -   php artisan migrate
+-   php artisan key:generate
 -   php artisan serve
 
 For example my .env
